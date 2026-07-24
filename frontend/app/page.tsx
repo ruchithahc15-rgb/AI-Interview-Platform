@@ -1,8 +1,12 @@
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
 export default function Home() {
   return (
-    <main>
-      <h1>AI Interview Preparation Platform</h1>
-      <p>Welcome to the project!</p>
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <Features />
     </main>
   );
 }
