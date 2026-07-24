@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Button from "./Button";
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center h-[70vh] text-center">
@@ -9,9 +11,9 @@ export default function Hero() {
         Practice interviews, analyze resumes, and improve your skills with AI.
       </p>
 
-      <button className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-        Get Started
-      </button>
+      <Link href="/login">
+        <Button text="Get Started" />
+      </Link>
     </section>
   );
 }
